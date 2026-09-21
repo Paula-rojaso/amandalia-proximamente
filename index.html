@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ed8a9b" />
+    <meta name="description" content="Amandalia Pet Store: muy pronto, todo para consentir a tus mascotas." />
+    <title>Amandalia Pet Store | Próximamente</title>
+    <style>
+      :root { --ink:#352b35; --rose:#ed8a9b; --deep-rose:#d85c78; --cream:#fff9f3; --leaf:#8eaa82; }
+      * { box-sizing: border-box; }
+      body { margin:0; min-height:100vh; display:grid; place-items:center; overflow:hidden; font-family:Arial, Helvetica, sans-serif; color:var(--ink); background:radial-gradient(circle at 14% 14%, #ffe3d0 0 12%, transparent 13%),radial-gradient(circle at 88% 82%, #dfeeda 0 14%, transparent 15%),var(--cream); }
+      .paw { position:absolute; color:var(--rose); opacity:.18; font-size:8rem; transform:rotate(-18deg); user-select:none; }
+      .paw.one { left:3vw; top:6vh; } .paw.two { right:5vw; bottom:3vh; transform:rotate(23deg); } .paw.three { right:8vw; top:10vh; font-size:4rem; }
+      main { width:min(92vw, 720px); padding:46px 32px; text-align:center; position:relative; z-index:1; }
+      .badge { display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; background:#fff; color:var(--deep-rose); font-weight:700; font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; box-shadow:0 8px 22px rgba(78,44,54,.08); }
+      .dot { width:9px; height:9px; border-radius:50%; background:var(--leaf); }
+      .logo { margin:25px 0 10px; font-family:Georgia, serif; font-size:clamp(3.1rem, 10vw, 5.7rem); line-height:.9; letter-spacing:-.07em; color:var(--deep-rose); }
+      .logo span { color:var(--leaf); }
+      :root { --deep-rose:#522679; --leaf:#079b9e; --rose:#e9538b; }
+      body { overflow:visible; background:radial-gradient(circle at 14% 14%, #fce5ef 0 12%, transparent 13%),radial-gradient(circle at 88% 82%, #dff4f2 0 14%, transparent 15%),#fffafd; }
+      img.logo { display:block; width:min(100%,310px); height:auto; margin:24px auto 10px; border-radius:24px; }
+      address { font-style:normal; line-height:1.8; margin-top:22px; font-size:.95rem; }
+      address a { color:#522679; overflow-wrap:anywhere; text-underline-offset:4px; }
+      .whatsapp { position:fixed; z-index:10; bottom:max(20px,env(safe-area-inset-bottom)); right:20px; display:flex; align-items:center; gap:10px; min-height:58px; padding:13px 20px; border-radius:999px; background:#087c42; color:white; text-decoration:none; font-weight:700; box-shadow:0 6px 24px #15552b40; }
+      .whatsapp:hover { background:#065d32; }
+      .whatsapp svg { width:28px; height:28px; }
+      a:focus-visible { outline:3px solid #079b9e; outline-offset:5px; }
+      main footer { padding-bottom:70px; }
+      h1 { margin:25px auto 14px; font-family:Georgia, serif; font-size:clamp(1.8rem, 5vw, 3rem); line-height:1.1; font-weight:500; }
+      p { max-width:510px; margin:0 auto; font-size:clamp(1rem, 2.6vw, 1.2rem); line-height:1.6; color:#655764; }
+      .card { margin:31px auto 0; max-width:430px; padding:20px; border:1px solid rgba(237,138,155,.24); border-radius:24px; background:rgba(255,255,255,.72); box-shadow:0 14px 35px rgba(99,64,73,.10); backdrop-filter:blur(7px); }
+      .card strong { display:block; margin-bottom:7px; font-size:1rem; }
+      .contact { display:inline-block; margin-top:15px; padding:13px 23px; border-radius:999px; background:var(--deep-rose); color:#fff; text-decoration:none; font-weight:700; transition:transform .2s, background .2s; }
+      .contact:hover { transform:translateY(-2px); background:#be4964; }
+      footer { margin-top:28px; font-size:.82rem; color:#837681; }
+      @media (max-width:480px) { main { padding:38px 18px; } .paw { font-size:5rem; } }
+    </style>
+  </head>
+  <body>
+    <div class="paw one">♥</div><div class="paw two">♥</div><div class="paw three">♥</div>
+    <main>
+      <div class="badge"><i class="dot"></i> Abrimos muy pronto</div>
+      <img class="logo" src="logo-amandalia.png" alt="Amandalia Pet Store. Cuidamos a tus mascotas como en casa." />
+      <h1>Todo para regalonear a quienes más quieres.</h1>
+      <p>Estamos preparando nuestra tienda online para que encuentres productos pensados con cariño para tus mascotas.</p>
+      <section class="card">
+        <strong>¿Quieres saber cuándo abrimos?</strong>
+        Escríbenos y te avisaremos las novedades de Amandalia Pet Store.
+        <a class="contact" href="mailto:ventas@amandaliapetstore.com?subject=Quiero%20saber%20cu%C3%A1ndo%20abre%20Amandalia">Escríbenos por correo</a>
+      </section>
+      <address>Galaxia Sur 0857, Maipú<br />Región Metropolitana de Santiago, Chile<br />
+        <a href="mailto:ventas@amandaliapetstore.com">ventas@amandaliapetstore.com</a><br />
+        <a href="tel:+56941004600">+56 9 4100 4600</a>
+      </address>
+      <footer>© <span id="year"></span> Amandalia Pet Store</footer>
+    </main>
+    <a class="whatsapp" href="https://wa.me/56941004600?text=Hola%20Amandalia%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener noreferrer" aria-label="Contactar a Amandalia por WhatsApp al +56 9 4100 4600">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 4a10 10 0 0 0-16 12L2 22l6-2A10 10 0 0 0 20 4Z"/><path d="M8 6c-4 2 5 13 9 9l-3-2-1 1c-2-1-3-2-4-4l1-1Z"/></svg>
+      WhatsApp
+    </a>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
