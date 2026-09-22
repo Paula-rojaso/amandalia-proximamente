@@ -211,8 +211,13 @@
       }
 
       .whatsapp:hover { background: #066936; transform: translateY(-2px); }
-      .whatsapp svg { width: 27px; height: 27px; flex: 0 0 auto; }
-      a:focus-visible { outline: 3px solid var(--turquoise); outline-offset: 4px; }
+      .whatsapp svg {
+        display: block;
+        width: 27px;
+        height: 27px;
+        flex: 0 0 27px;
+        overflow: visible;
+      }      a:focus-visible { outline: 3px solid var(--turquoise); outline-offset: 4px; }
 
       @media (max-width: 520px) {
         .page { padding: 30px 16px 105px; }
@@ -281,13 +286,23 @@
       </section>
     </main>
 
-    <a class="whatsapp" href="https://wa.me/56941004600?text=Hola%20Amandalia%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener noreferrer" aria-label="Contactar a Amandalia por WhatsApp al +56 9 4100 4600">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-        <path d="M20 4a10 10 0 0 0-16 12L2 22l6-2A10 10 0 0 0 20 4Z" />
-        <path d="M8 6c-4 2 5 13 9 9l-3-2-1 1c-2-1-3-2-4-4l1-1Z" />
-      </svg>
-      <span>WhatsApp</span>
-    </a>
+    <a
+  class="whatsapp"
+  href="https://wa.me/56941004600?text=Hola%20Amandalia%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar a Amandalia por WhatsApp al +56 9 4100 4600"
+>
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M12.04 2a9.84 9.84 0 0 0-8.43 14.9L2 22l5.23-1.55A9.9 9.9 0 1 0 12.04 2Zm0 17.98a8.07 8.07 0 0 1-4.12-1.13l-.3-.18-3.1.92.94-3.02-.2-.31a8.04 8.04 0 1 1 6.78 3.72Zm4.42-6.02c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.19a7.2 7.2 0 0 1-1.34-1.66c-.14-.24-.01-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.41-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.39 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.43-.59 1.63-1.15.2-.56.2-1.04.14-1.15-.06-.1-.22-.16-.46-.28Z" />
+  </svg>
+
+  <span>WhatsApp</span>
+</a>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
